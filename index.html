@@ -7,10 +7,10 @@
     <title>Quiz</title>
   </head>
   <body>
-    <div id="1">
-      <p>Who was the 43rd president of the United States?</p>
+    <form>
+      <div id="1">
+        <p>What was the 43 president of the United States?</p>
 
-      <form>
          
         <input
           type="radio"
@@ -36,14 +36,12 @@
           name="question1"
           value="George H. Bush"
         />
-          <label for="h-bush">George H. Bush</label>
-      </form>
-    </div>
+          <label for="h.bush">George H. Bush</label>
+      </div>
 
-    <div id="2">
-      <p>What is the largest state in the U.S?</p>
+      <div id="2">
+        <p>What is the largest state in the U.S?</p>
 
-      <form>
          
         <input type="radio" id="texas" name="question2" value="Texas" />
           <label for="texas">Texas</label>
@@ -55,13 +53,11 @@
          
         <input type="radio" id="cali" name="question2" value="California" />
           <label for="cali">California</label>
-      </form>
-    </div>
+      </div>
 
-    <div id="3">
-      <p>How many stars are on the American Flag?</p>
+      <div id="3">
+        <p>How many stars are on the American Flag?</p>
 
-      <form>
          
         <input type="radio" id="47" name="question3" value="47" />
           <label for="47">47</label>
@@ -73,7 +69,13 @@
          
         <input type="radio" id="52" name="question3" value="52" />
           <label for="52">52</label>
-      </form>
-    </div>
+      </div>
+
+      <br />
+
+      <input type="button" value="Submit quiz" onclick="checkQuiz()" />
+    </form>
+
+    <script src="main.js"></script>
   </body>
 </html>
