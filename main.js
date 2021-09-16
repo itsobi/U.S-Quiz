@@ -1,0 +1,3 @@
+function checkQuiz() {
+    alert("hello");
+}
