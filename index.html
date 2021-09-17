@@ -4,76 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz</title>
   </head>
   <body>
-    <form>
-      <div id="1">
-        <p>What was the 43 president of the United States?</p>
+    <header>
+      <h1>U.S Quiz</h1>
+    </header>
 
+    <form name="quiz" id="quiz">
+      <div id="first">
+        <p>1. Who was the 43rd president of the United States?</p>
+
+        <p>
+          <input type="radio" name="question1" value="Barack Obama" />A. Barack
+          Obama
+        </p>
+
+        <p>
+          <input type="radio" name="question1" value="George W. Bush" />B.
+          George W. Bush
+        </p>
+
+        <p>
+          <input type="radio" name="question1" value="Bill Clinton" />C. Bill
+          Clinton
+        </p>
+
+        <p>
+          <input type="radio" name="question1" value="George H. Bush" />D.
+          George H. Bush
+        </p>
+
+        <p id="one-result"></p>
          
-        <input
-          type="radio"
-          id="barack-obama"
-          name="question1"
-          value="Barack Obama"
-        />
-          <label for="barack-obama">Barack Obama</label>
-        <br />
-         
-        <input
-          type="radio"
-          id="w-bush"
-          name="question1"
-          value="George W. Bush"
-        />
-          <label for="w-bush">George W. Bush</label>
-        <br />
-         
-        <input
-          type="radio"
-          id="h-bush"
-          name="question1"
-          value="George H. Bush"
-        />
-          <label for="h.bush">George H. Bush</label>
       </div>
 
-      <div id="2">
-        <p>What is the largest state in the U.S?</p>
+      <div id="second">
+        <p>2. What is the largest state in the U.S?</p>
 
+        <p><input type="radio" name="question2" value="Texas" />A. Texas</p>
+
+        <p><input type="radio" name="question2" value="Alaska" />B. Alaska</p>
+
+        <p><input type="radio" name="question2" value="Florida" />C. Florida</p>
+
+        <p>
+          <input type="radio" name="question2" value="New York" />D. New York
+        </p>
+
+        <p id="two-result"></p>
          
-        <input type="radio" id="texas" name="question2" value="Texas" />
-          <label for="texas">Texas</label>
-        <br />
-         
-        <input type="radio" id="alaska" name="question2" value="Alaska" />
-          <label for="alaska">Alaska</label>
-        <br />
-         
-        <input type="radio" id="cali" name="question2" value="California" />
-          <label for="cali">California</label>
       </div>
 
-      <div id="3">
-        <p>How many stars are on the American Flag?</p>
+      <div id="third">
+        <p>3. How many stars are on the American Flag?</p>
 
-         
-        <input type="radio" id="47" name="question3" value="47" />
-          <label for="47">47</label>
-        <br />
-         
-        <input type="radio" id="50" name="question3" value="50" />
-          <label for="50">50</label>
-        <br />
-         
-        <input type="radio" id="52" name="question3" value="52" />
-          <label for="52">52</label>
+        <p><input type="radio" name="question3" value="51" />A. 51</p>
+
+        <p><input type="radio" name="question3" value="52" />B. 52</p>
+
+        <p><input type="radio" name="question3" value="47" />C. 47</p>
+
+        <p><input type="radio" name="question3" value="50" />D. 50</p>
+
+        <p id="three-result"></p>
       </div>
-
       <br />
 
-      <input type="button" value="Submit quiz" onclick="checkQuiz()" />
+      <input type="button" id="sub" value="Submit quiz" onclick="checkQuiz()" />
+      <input type="button" id="res" value="Reset quiz" onclick="resetQuiz()" />
     </form>
 
     <script src="main.js"></script>
