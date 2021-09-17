@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Brush Script MT", cursive;
+}
+
+header {
+  background: linear-gradient(90deg, #041e42 20%, #9b1c2c 100%);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+}
+
+div {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#sub {
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#res {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#one-result {
+  color: green;
+}
+
+#two-result {
+  color: green;
+}
+
+#three-result {
+  color: green;
+}
